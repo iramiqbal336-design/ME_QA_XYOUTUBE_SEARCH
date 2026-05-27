@@ -1,17 +1,26 @@
 package demo.wrappers;
 
+import java.util.List;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import java.time.Duration;
 
 public class Wrappers {
-    /*
-     * Write your selenium wrappers here
-     */
+    WebDriver driver;
+
+    public Wrappers(WebDriver driver) {
+        this.driver = driver;
+    }
+
+    public void clickElementFromList(By locator, String text) {
+        List<WebElement> elements = driver.findElements(locator);
+        for (WebElement element : elements) {
+            String value = element.getText().trim();
+            if (value.equalsIgnoreCase(text)) {
+                element.click();
+                return;
+            }
+        }
+        throw new RuntimeException("Element not found: " + text);
+    }
 }
