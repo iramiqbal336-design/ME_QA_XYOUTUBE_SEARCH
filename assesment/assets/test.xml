@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="8.45">
 <file name="C:\Users\Lenovo\Documents\crio\ME_QA_XYOUTUBE_SEARCH_MODULE_L1_STUB\src\test\java\demo\TestCases.java">
-<error line="24" severity="error" message="USED_WAIT" source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineJavaCheck"/>
-<error line="35" severity="error" message="USED_SOPL" source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineJavaCheck"/>
+<error line="53" severity="error" message="USED_WAIT" source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineJavaCheck"/>
+<error line="70" severity="error" message="USED_SOPL" source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineJavaCheck"/>
 </file>
 <file name="C:\Users\Lenovo\Documents\crio\ME_QA_XYOUTUBE_SEARCH_MODULE_L1_STUB\src\test\java\demo\utils\ExcelDataProvider.java">
 <error line="10" severity="error" message="USED_SOPL" source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineJavaCheck"/>
